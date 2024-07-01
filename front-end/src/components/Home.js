@@ -2,6 +2,8 @@ import React from "react";
 import PersonalData from "../apis/PersonalData";
 import "../styles/Home.css";
 import Photo from "../media/image.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 
 const goals = ["DevOps Enthusiast", "Full-stack Developer", "Data sceintist"];
@@ -15,14 +17,12 @@ const Home = () => {
 
   return (
     <div id="home-container">
-    <div className="container" >
-      {/* d-flex flex-row content-container justify-content-lg-evenly flex-wrap */}
+    <div className="container">
       <div className="row">
-      {/* d-flex flex-column text-content */}
         <div className="col-md-6" id="text-content">
-          <h2 className="">Hi, I'm </h2>
-          <h1 className="">{data.name}</h1>
-          <h3>{goals[0]}</h3>
+          <h2 className="greet">Hi, I'm </h2>
+          <h1 className="name">{data.name}</h1>
+          <h3 className="greet">{goals[0]}</h3>
           <div className="d-flex flex-column">
             <div className="about">
               <p>{data.about}</p>
@@ -37,8 +37,8 @@ const Home = () => {
           <img src={Photo} className="img-fluid" alt="Image not found"></img>
         </div>
       </div>
-      <div className="direction d-flex justify-content-center">
-        <p>Scroll now</p>
+      <div className="direction d-flex justify-content-center " style={{paddingTop: "100px"}}>
+        <p><FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon> &nbsp; Scroll now  &nbsp;<FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon></p>
       </div>
     </div>
     </div>

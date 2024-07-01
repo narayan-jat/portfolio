@@ -8,10 +8,10 @@ const Header = () => {
                 <h1>Narayan</h1>
             </div>
             <div>
-                <ul className="d-flex flex-row list-unstyled m-0">
+                <ul className="d-lg-flex list-unstyled m-0 d-none d-sm-none d-md-none">
                     <li className="mx-2">
-                        <Link to="/">Home</Link>
-                    </li>
+                            <Link to="/">Home</Link>
+                        </li>
                     <li className="mx-2">
                         <Link to="/about">About</Link>
                     </li>

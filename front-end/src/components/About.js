@@ -1,21 +1,26 @@
 import PersonalData from "../apis/PersonalData.js";
 import "../styles/About.css";
+import experienceIcon from "../media/dev-experience.svg"
+import projectIcon from "../media/projects-icon.svg";
 
 const experience = [
   {
     name: " Chalo",
     role: "Interned at",
     period: " for 2 Months",
+    imageUrl: experienceIcon
   },
   {
     name: "Mathisys ",
     role: "Interned at ",
     period: "for 3 Months",
+    imageUrl: experienceIcon
   },
   {
     name: "Projects ",
     role: "Completed ",
     period: "4+ Projects",
+    imageUrl: projectIcon,
   },
 ];
 
@@ -28,15 +33,15 @@ const About = () => {
   return (
     <div>
       <h3 className="about-title">About me</h3>
-      <div className="bio-container d-flex flex-row justify-content-evenly">
-        <div>
+      <div className=" " id="bio-container">
+        <div className="experience-section">
           {experience.map((exp, index) => (
-            <div className="d-flex flex-row justify-content-between" key={index}>
-              <div className="">
-                <img src="sdfd" alt="not found"></img>
+            <div className="d-flex flex-row justify-content-start" key={index}>
+              <div>
+                <img className="experience-svgs" src={exp.imageUrl}alt="not found"></img>
               </div>
               <div>
-                <h4>
+                <h4 id="experience-title">
                   {exp.role} {exp.name}{" "}
                   <span className="period">{exp.period}</span>
                 </h4>

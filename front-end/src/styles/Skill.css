@@ -1,21 +1,30 @@
 .skill-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* margin: 0 100px; */
+    margin-left: 10%;
 }
 
 .skills {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: -20px;
 }
 
 .skill-image {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    transition: background-color 0.5s ease;
+}
+.skill-image:hover{
+    background-color: rgba(37, 218, 20, 0.301);
+    border-radius: 50%;
 }
 .skill-title {
-    /* margin: 0 auto; */
     padding: 50px 0;
+}
+.skill-image-box {
+    min-width: 17%;
+    margin: 25px;
 }

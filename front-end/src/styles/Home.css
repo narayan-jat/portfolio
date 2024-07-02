@@ -3,6 +3,7 @@
     color: white;
     padding-top: 150px;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 img {
@@ -64,5 +65,12 @@ img {
     .name {
         font-size: 3rem;
         color: #198754;
+    }
+}
+
+@media (max-width: 768px) {
+    #text-content {
+        max-width: 100%;
+        margin: 0 10%;
     }
 }

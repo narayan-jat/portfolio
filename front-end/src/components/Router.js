@@ -8,10 +8,6 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        {/* <Route path="/about" element={<Header />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </BrowserRouter>
   );

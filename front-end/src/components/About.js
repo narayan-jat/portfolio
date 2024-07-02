@@ -31,12 +31,12 @@ const About = () => {
   }
 
   return (
-    <div>
+    <div id="about">
       <h3 className="about-title">About me</h3>
-      <div className=" " id="bio-container">
+      <div className="d-flex justify-content-center" id="bio-container">
         <div className="experience-section">
           {experience.map((exp, index) => (
-            <div className="d-flex flex-row justify-content-start" key={index}>
+            <div id="experience-inner"className="d-flex flex-row justify-content-start" key={index}>
               <div>
                 <img className="experience-svgs" src={exp.imageUrl}alt="not found"></img>
               </div>
@@ -49,11 +49,12 @@ const About = () => {
             </div>
           ))}
         </div>
+        <div className="about-line"></div>
         <div className="bio-content">
           <h2>
-            What are my strongest sides <span>and skills?</span>
+            What are my strongest sides <span className="period">and skills?</span>
           </h2>
-          <p>{data.bio}</p>
+          <p id="bio">{data.bio}</p>
         </div>
       </div>
     </div>

@@ -4,12 +4,17 @@ import "../styles/Home.css";
 import Photo from "../media/image.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 
 const goals = ["DevOps Enthusiast", "Full-stack Developer", "Data sceintist"];
 
 const Home = () => {
   const data = PersonalData();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
 
   if (data === null) {
     return <h1>Narayan is thinking</h1>;
@@ -38,7 +43,7 @@ const Home = () => {
         </div>
       </div>
       <div className="direction d-flex justify-content-center " style={{paddingTop: "100px"}}>
-        <p><FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon> &nbsp; Scroll now  &nbsp;<FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon></p>
+        <Link className="scroll-link" to="#about" onClick={() => scrollToSection('about')}><FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon> &nbsp; Scroll now  &nbsp;<FontAwesomeIcon icon={faAngleDoubleDown}></FontAwesomeIcon></Link>
       </div>
     </div>
     </div>

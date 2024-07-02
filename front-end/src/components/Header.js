@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  // const [isMenuLayout, setIsMenuLayout] = useState(true);
   const [isButtonCLicked, setIsButtonClicked] = useState(false);
   const buttonRef = useRef(null);
-
 
   const handleClick = () => {
    setIsButtonClicked(!isButtonCLicked);
@@ -18,11 +16,15 @@ const Header = () => {
     const button = buttonRef.current;
     button.addEventListener('click', handleClick);
 
-    // Cleanup function to remove the event listener
     return () => {
       button.removeEventListener('click', handleClick);
     };
   }, [isButtonCLicked]);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="header">
@@ -37,12 +39,12 @@ const Header = () => {
       <div className={`${isButtonCLicked ? "link-container-active" : "link-container"}`}>
         <ul className="links-list">
           <li className="list-item">
-            <Link className="header-link" to="/">
+            <Link className="header-link" to="#" onClick={() => scrollToSection('home-container')}>
               Home
             </Link>
           </li>
-          <li className="list-item">
-            <Link className="header-link" to="/about">
+          <li className="list-item" onClick={() => scrollToSection('about')}>
+            <Link className="header-link" to="#about">
               About
             </Link>
           </li>
@@ -57,7 +59,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="list-item">
-            <Link className="header-link" to="/contact">
+            <Link className="header-link" to="#contact" onClick={() => scrollToSection('contact')}>
               Contact
             </Link>
           </li>

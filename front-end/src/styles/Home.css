@@ -12,6 +12,14 @@ img {
 
 .direction {
     margin: 50px auto;
+    
+}
+.scroll-link {
+    color: white;
+    text-decoration: none;
+}
+.scroll-link:hover {
+    color: #07b16a;
 }
 #text-content {
     max-width: 100%;

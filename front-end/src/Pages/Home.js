@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import "../styles/Pages.css";
+import Projects from "../components/Projects";
 
 const Portfolio = () => {
 
@@ -13,6 +14,7 @@ const Portfolio = () => {
             <Home/>
             <About/>
             <Skills/>
+            <Projects/>
         </div>
     )
 }

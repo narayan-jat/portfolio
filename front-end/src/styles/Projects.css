@@ -1,0 +1,51 @@
+#projects {
+    padding: 150px 0;
+    /* margin: 0 10%; */
+}
+
+.projects-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: green;
+    padding: 50px 0;
+}
+
+.project-carousel {
+    height: 600px;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.project-items {
+    /* height: 600px; */
+    margin: 0 auto;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-item-container {
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white; /* Background color of the div */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* Small shadow for subtle effect */
+                0 10px 20px rgba(0, 0, 0, 0.15); /* Larger shadow for lifted effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.project-item-container:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Adjust shadow for hover effect */
+                0 20px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+#project-texts{
+    position: absolute;
+    bottom: auto;
+}

@@ -12,14 +12,10 @@
 }
 
 .project-carousel {
-    height: 600px;
+    height: auto;
     width: 50%;
-    margin: 0 auto; 
-}
-
-.project-items {
-    /* height: 600px; */
     margin: 0 auto;
+    z-index: 1;
 }
 
 .project-image {
@@ -27,25 +23,74 @@
     height: auto;
 }
 
+.project-items {
+    padding-bottom:  70px;
+}
+
 .project-item-container {
-    height: 500px;
+    height: auto;
     width: 50%;
     margin: 0 auto;
-    background-color: white; /* Background color of the div */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Inner space */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* Small shadow for subtle effect */
-                0 10px 20px rgba(0, 0, 0, 0.15); /* Larger shadow for lifted effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+                0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .project-item-container:hover {
-    transform: translateY(-10px); /* Lift up on hover */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Adjust shadow for hover effect */
-                0 20px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+                0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+
+
 #project-texts{
-    position: absolute;
+    position: relative;
     bottom: auto;
+    text-align: center;
+    left: 0;
+}
+
+.project-details {
+    text-align: justify;
+}
+
+.project-button{
+    width: 75%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: green;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .project-carousel{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-carousel{
+        width: 75%;
+    }
+    .project-item-container {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .project-carousel{
+        width: 80%;
+    }
+    .project-item-container {
+        width: 65%;
+    }
+}
+@media (max-width: 600px){
+    .project-carousel{
+        width: 100%;
+    }
+    .project-item-container{
+        width: 85%;
+    }
 }

@@ -5,6 +5,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import "../styles/Pages.css";
 import Projects from "../components/Projects";
+import Achievemets from "../components/Achiements";
 
 const Portfolio = () => {
 
@@ -15,6 +16,7 @@ const Portfolio = () => {
             <About/>
             <Skills/>
             <Projects/>
+            <Achievemets/>
         </div>
     )
 }

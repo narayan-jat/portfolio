@@ -58,7 +58,7 @@ const programmingSkills= [ {
 
 const Skills = () => {
   return (
-    <div style={{ backgroundColor: "black", color: "white", width: "100%"}}>
+    <div id="skills" style={{ backgroundColor: "black", color: "white", width: "100%", paddingTop: "100px"}}>
       <h2
         style={{
             display: "flex",
@@ -70,7 +70,7 @@ const Skills = () => {
       >
         Skills
       </h2>
-      <div id="skills" className="skill-container">
+      <div className="skill-container">
         <h2 className="skill-title">Programming Skills</h2>
         <div className="skills">
           {programmingSkills.map((skill, index) => (

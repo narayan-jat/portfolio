@@ -1,37 +1,44 @@
 import Carousel from "react-bootstrap/Carousel";
 import projectImage from "../media/projects-default.jpg";
 import "../styles/Projects.css";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     name: "XYZ",
-    details: "lorem ispsum",
+    details:
+      "In a world increasingly driven by technology, the importance of cybersecurity cannot be overstated. As more of our personal and professional lives move online, the risks associated with data breaches and cyberattacks grow exponentially. Cybercriminals are becoming more sophisticated, employing advanced techniques to exploit vulnerabilities in systems and networks.",
     imageUrl: projectImage,
-    url: "https://codewithnarayan.com/",
+    sourceUrl: "https://codewithnarayan.com/",
+    liveUrl: "",
   },
   {
     name: "XYZ",
     details: "lorem ispsum",
     imageUrl: projectImage,
-    url: "https://codewithnarayan.com/",
+    sourceUrl: "https://codewithnarayan.com/",
+    liveUrl: "",
   },
   {
     name: "XYZ",
     details: "lorem ispsum",
     imageUrl: projectImage,
-    url: "https://codewithnarayan.com/",
+    sourceUrl: "https://codewithnarayan.com/",
+    liveUrl: "",
   },
   {
     name: "XYZ",
     details: "lorem ispsum",
     imageUrl: projectImage,
-    url: "https://codewithnarayan.com/",
+    sourceUrl: "https://codewithnarayan.com/",
+    liveUrl: "",
   },
   {
     name: "XYZ",
     details: "lorem ispsum",
     imageUrl: projectImage,
-    url: "https://codewithnarayan.com/",
+    sourceUrl: "https://codewithnarayan.com/",
+    liveUrl: "",
   },
 ];
 function Projects() {
@@ -39,21 +46,47 @@ function Projects() {
     <div id="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="">
-        <Carousel data-bs-theme="dark" className="project-carousel">
+        <Carousel
+          data-bs-theme="dark"
+          className="project-carousel"
+          interval= {4000}
+          keyboard={true}
+          touch={true}
+        >
           {projects.map((project, index) => (
             <Carousel.Item key={index} className="project-items">
               <div className="project-item-container">
-                <img
-                  className="project-image"
-                  src={project.imageUrl}
-                  alt="First slide"
-                />
+                <Link
+                  to={project.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="project-image"
+                    src={project.imageUrl}
+                    alt="First slide"
+                  />
+                </Link>
                 <Carousel.Caption id="project-texts">
                   <h5>{project.name}</h5>
-                  <p>{project.details}</p>
+                  <Link
+                    to={project.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <p className="project-details">{project.details}</p>
+                  </Link>
+                  <Link
+                    to={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-button">See Source Code</button>
+                  </Link>
                 </Carousel.Caption>
               </div>
-            </Carousel.Item>
+          </Carousel.Item>
           ))}
         </Carousel>
       </div>

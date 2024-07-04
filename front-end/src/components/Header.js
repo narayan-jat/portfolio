@@ -49,17 +49,22 @@ const Header = () => {
             </Link>
           </li>
           <li className="list-item">
-            <Link className="header-link" to="/services">
-              Services
+            <Link className="header-link" to="#skills" onClick={() => scrollToSection('skills')}>
+              Skills
             </Link>
           </li>
           <li className="list-item">
-            <Link className="header-link" to="/portfolio">
-              Portfolio
+            <Link className="header-link" to="#projects" onClick={() => scrollToSection('projects')}>
+              Projects
             </Link>
           </li>
           <li className="list-item">
-            <Link className="header-link" to="#contact" onClick={() => scrollToSection('contact')}>
+            <Link className="header-link" to="#achivements" onClick={() => scrollToSection('achievements')}>
+              Achievements
+            </Link>
+          </li>
+          <li className="list-item">
+            <Link className="header-link" to="#achivements" onClick={() => scrollToSection('achievements')}>
               Contact
             </Link>
           </li>

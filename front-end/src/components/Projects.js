@@ -49,7 +49,7 @@ function Projects() {
         <Carousel
           data-bs-theme="dark"
           className="project-carousel"
-          interval= {null}
+          interval= {4000}
           keyboard={true}
           touch={true}
         >

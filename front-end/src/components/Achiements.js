@@ -6,7 +6,7 @@ const milestones = [
         title: "Schooling",
         date:  "21 May 2020",
         details: "When writing a special milestone on your portfolio, you might want to include several key fields to effectively convey the significance and impact of that milestone. Here are some fields you can consider including",
-        achievement: "Got 100 out 100 in exams"
+        achievement: ""
 
     },
     {
@@ -47,36 +47,44 @@ const Achievemets = () => {
         padding: "100px 0",
         color: "white",
       }}
-    >
-        <svg className="svg" width="100" height="500" xmlns="http://www.w3.org/2000/svg">
+    >   
+
+        <h2 style={{textAlign: "center", color: "green", paddingBottom: "50px"}}>Milestones</h2>
+        <svg className="svg" width="100" height="1700" xmlns="http://www.w3.org/2000/svg">
+        <polygon className="triangle" points="40,150 50,170 60,150" />
           <line
             x1="50"
-            y1="50"
+            y1="0"
             x2="50"
-            y2="450"
+            y2="1500"
             stroke="green"
             strokeWidth="5"
           />
-
-          <polygon className="triangle" points="40,455 50,475 60,455" />
-          {/* <polygon className="triangle" points="40,405 50,425 60,405" />
-          <polygon className="triangle" points="40,355 50,375 60,355" />
-          <polygon className="triangle" points="40,305 50,325 60,305" />
-          <polygon className="triangle" points="40,255 50,275 60,255" />
-          <polygon className="triangle" points="40,205 50,225 60,205" />
-          <polygon className="triangle" points="40,155 50,175 60,155" />
-          <polygon className="triangle" points="40,105 50,125 60,105" /> */}
-          <polygon className="triangle" points="40,55 50,75 60,55" />
+            <line
+            x1="50"
+            y1="1500"
+            x2="50"
+            y2="2000"
+            stroke="green"
+            strokeWidth="5"
+            className="line"
+          />
+            <polygon className="triangle" points="40,150 50,170 60,150" fill="white" stroke="green" strokeWidth={2}/>
+            <polygon className="triangle" points="40,465 50,485 60,465" fill="white" stroke="green" strokeWidth={2}/>
+            <polygon className="triangle" points="40, 800 50,820 60,800" fill="white" stroke="green" strokeWidth={2}/>
+            <polygon className="triangle" points="40,1195 50,1215 60,1195" fill="white" stroke="green" strokeWidth={2}/>
         </svg>
         <div className="milestones">
-            <ul>
+            <ul style={{paddingLeft: "0"}}>
                 {milestones.map((milestone, index) => (
                     <li key={index} >
                         <div className="milestone">
-                            <div className="milestone-title">{milestone.title}</div>
-                            <div className="date">{milestone.date}</div>
-                            <div className="detais">{milestone.details}</div>
-                            <div className="gain">{milestone.achievement}</div>
+                            <div className="milestone-title"><h1>{milestone.title}</h1></div>
+                            <div style={{border: "2px green solid"}}>
+                            <div className="date"><h4>Date: {milestone.date}</h4></div>
+                            <div className="details">{milestone.details}</div>
+                            <div className="gain"><h5>{milestone.achievement}</h5></div>
+                            </div>
                         </div>
                     </li>
                 ))}

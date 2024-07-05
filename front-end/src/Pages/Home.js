@@ -7,6 +7,7 @@ import "../styles/Pages.css";
 import Projects from "../components/Projects";
 import Achievemets from "../components/Achiements";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Portfolio = () => {
 
@@ -19,6 +20,7 @@ const Portfolio = () => {
             <Projects/>
             <Achievemets/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

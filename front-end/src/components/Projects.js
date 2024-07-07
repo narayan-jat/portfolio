@@ -14,7 +14,7 @@ const projects = [
     details:
       "This portfolio project showcases a collection of my work and achievements, demonstrating my skills and expertise in various domains. It includes detailed descriptions of individual projects, highlighting my proficiency in programming, data analysis, machine learning, and software development. Each project is accompanied by source code, visualizations.",
     imageUrl: projectImage,
-    sourceUrl: "https://github.com/narayan-jat/portfolio",
+    sourceUrl: "https://portfolio.netlify.app",
     liveUrl: "https://github.com/narayan-jat/portfolio",
     techStack: "React, Node",
     techField: "Web Development"
@@ -22,7 +22,7 @@ const projects = [
   {
     name: "Data Structures Repository",
     details:
-      "This project contains implementations all essential data structures, including arrays, linked lists, stacks, queues, trees, graphs, hash tables, and more. Each comes with comprehensive docstrings explaining functionality, usage, and underlying algorithms. Ideal for students and developers and can be used in various projects.",
+      "This project contains implementations of all the essential data structures, including arrays, linked lists, stacks, queues, trees, graphs, hash tables, and more. Each comes with comprehensive docstrings explaining functionality, usage, and underlying algorithms. Ideal for students and developers and can be used in various projects.",
     imageUrl: strucutre,
     sourceUrl: "https://github.com/narayan-jat/Data-structures",
     liveUrl: "https://github.com/narayan-jat/Data-structures",
@@ -42,7 +42,7 @@ const projects = [
   {
     name: "Tic Tac Toe Game",
     details:
-      "This is the web application for the game Tic-Tac-Toe. This is simple and user-friendly game application where a player can challenge either computer or friends online. Player can play even without logging in or can register if he wants to keep track of his winnings. I have implemented the ML algorithms Reinforcement Learning and MiniMax algorithm.",
+      "This is the web application for the game Tic-Tac-Toe. This is simple and user-friendly game application where a player can challenge computer online. Player can play even without logging in or can register if he wants to keep track of his winnings. I have implemented the ML algorithms, Reinforcement Learning and MiniMax algorithm.",
     imageUrl: tic,
     sourceUrl: "https://github.com/narayan-jat/game-project",
     liveUrl: "https://github.com/narayan-jat/game-project",

@@ -5,7 +5,7 @@ const milestones = [
   {
     title: "Internship at Mathisys",
     date:  "20 May 2024",
-    details: "I interned with Mathisys advisors LLP for 3 months, joining their on-site team in Gurgaon. This was my second on-site internship. I worked in the team of web developer. I with my team designed and created website of Purplesigma which is subsidiary of Mathisys. I also learned backe-end libraries like Spring-Boot. The work environment at Mathisys is very heart touching.",
+    details: "I interned with Mathisys advisors LLP for 3 months, joining their on-site team in Gurgaon. This was my second on-site internship. I worked in the team of web developer. I with my team designed and created website of Purplesigma which is subsidiary of Mathisys. I also learned back-end libraries like Spring-Boot. The work environment at Mathisys is very heart touching.",
     achievement: "Developed website for Purplesigma"
 },
   {
@@ -15,7 +15,7 @@ const milestones = [
     achievement: "Practiced theoretical concepts to solve pratical problems"
 },
     {
-        title: "Reliance Sholar",
+        title: "Reliance Scholar",
         date:  "15 December 2022",
         details: "For undergraduate students facing economic hardship, they provide merit-based scholarships. The Reliance Foundation graduate Scholarships aim to nurture world-class talent that will help power India’s new era of growth.",
         achievement: "Scholarship for 4 year graduation"
@@ -24,14 +24,14 @@ const milestones = [
     {
         title: "Hope and Dreams Trust Scholar",
         date:  "8 October 2022",
-        details: "Hope and Dream Trust provides scholarship to underpriviledged bright students to persue their dreams after 12th. In this scholarship student gets 100% scholarship including all the tuition fees and other expenses for entire graduation duration.",
+        details: "Hope and Dream Trust provides scholarship to underpriviledged bright students to pursue their dreams after 12th. In this scholarship student gets 100% scholarship including all the tuition fees and other expenses for entire graduation duration.",
         achievement: "100% Scholarship for 4 years of graduation"
 
     },
     {
         title: "Senior Secondary",
         date:  "4 August 2022",
-        details: "I completed senior secondary education from JNV Bagalure(Bangalore) with scoring a perfect 100 out of 100 in Computer Science in CBSE board exams. I also prepared for IIT exams in these two year period from Dakshana. I secured 98.33 percentile JEE MAINS and AIR 11000 in JEE Advance. This remarkable accomplishment highlights my exceptional dedication, strong academic prowess, and commitment to excellence.",
+        details: "I completed senior secondary education from JNV Bagalure(Bangalore) with scoring a perfect 100 out of 100 in Computer Science in CBSE board exams. I also prepared for IIT exams in these two year period from Dakshana. I secured 98.33 percentile in JEE MAINS and AIR 11000 in JEE Advance. This remarkable accomplishment highlights my exceptional dedication, strong academic prowess, and commitment to excellence.",
         achievement: "Scored 100 out of 100 in Computer Science"
 
     },
@@ -45,7 +45,7 @@ const milestones = [
     {
         title: "Higher Secondary",
         date:  "20 April 2020",
-        details: "I completed high secondary education from JNV Rajsamand with scoring a perfect 100 out of 100 in Mathematics in CBSE board exams. This remarkable accomplishment highlights my exceptional dedication, strong academic prowess, and commitment to excellence. It reflects not only my mastery of mathematical concepts but also my ability to perform exceptionally well under challenging circumstances. ",
+        details: "I completed high secondary education from JNV Rajsamand with scoring a perfect 100 out of 100 in Mathematics in CBSE board exams. This remarkable accomplishment highlights my exceptional dedication, strong academic prowess, and commitment to excellence. It reflects not only my mastery of mathematical concepts but also my ability to perform exceptionally well under challenging circumstances.",
         achievement: "Scored perfect score in Mathematics"
 
     },

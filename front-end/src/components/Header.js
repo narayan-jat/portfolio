@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "../styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -60,18 +60,20 @@ const Header = () => {
           </li>
           <li className="list-item">
             <Link className="header-link" to="#achivements" onClick={() => scrollToSection('achievements')}>
-              Achievements
+              Milestones
             </Link>
           </li>
           <li className="list-item">
-            <Link className="header-link" to="#achivements" onClick={() => scrollToSection('achievements')}>
+            <Link className="header-link" to="#contact" onClick={() => scrollToSection('contact')}>
               Contact
             </Link>
           </li>
         </ul>
       </div>
       <div className="button">
+        <Link to="https://drive.google.com/file/d/1JNhoViPEGQuhDiHAcBDnd1yPodSmeIWA/view?usp=sharing" target="_blank">
         <button type="button" className="btn btn-success" id="button-resume"><FontAwesomeIcon icon={faDownload} /> Resume</button>
+        </Link>
       </div>
     </div>
   );

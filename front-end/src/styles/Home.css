@@ -1,13 +1,13 @@
 #home-container {
     background-color: black;
     color: white;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 50px;
     width: 100%;
 }
 
 img {
-    width: 500px;   
+    max-width: 500px;   
     height: 400px;
 }
 
@@ -33,6 +33,7 @@ img {
     max-width: 75%;
     text-align: justify;
     margin: 25px 0;
+    font-family: sans-serif;
 }
 
 #home-button {
@@ -71,6 +72,6 @@ img {
 @media (max-width: 768px) {
     #text-content {
         max-width: 100%;
-        margin: 0 10%;
+        padding-left: 10%;
     }
 }

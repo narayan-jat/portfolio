@@ -39,4 +39,7 @@
     #contact-image {
         display: none;
     }
+    #contact-button{
+        width:100%;
+    }
 }

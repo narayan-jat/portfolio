@@ -2,8 +2,35 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../styles/Contact.css";
 import contactImage from "../media/contact.png";
+import { useState } from "react";
+import axios from "axios";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+});
+
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+      await axios.post('https://narayanjat.pythonanywhere.com/contact/', formData);
+      toast.success("Email Sent Successfully");
+      setFormData({ name: '', email: '', message: '' });
+  } catch (error) {
+    console.log(error)
+    toast.error("Facing Internal Server Error")
+  }
+};
+
   return (
     <div id="contact" style={{ padding: "150px 0" }}>
       <h2
@@ -13,11 +40,14 @@ function Contact() {
       </h2>
       <div className="contact">
         <div className="contact-form">
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3 " controlId="formBasicName">
               <Form.Label>Full Name</Form.Label>
               <Form.Control
                 type="text"
+                name="name"
+                required={true}
+                onChange={handleChange}
                 style={{
                   border: "none",
                   borderBottom: "1px solid black",
@@ -32,6 +62,9 @@ function Contact() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
+                name="email"
+                required={true}
+                onChange={handleChange}
                 style={{
                   border: "none",
                   borderBottom: "1px solid black",
@@ -49,6 +82,9 @@ function Contact() {
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
+                name="message"
+                onChange={handleChange}
+                required={true}
                 rows={1}
                 style={{
                   border: "none",

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faWeight } from "@fortawesome/free-solid-svg-icons";
+import { faHeart} from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faGithub,
@@ -8,7 +8,7 @@ import {
   faHackerrank,
   faLinkedin,
   faWhatsapp,
-  faSlack,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";

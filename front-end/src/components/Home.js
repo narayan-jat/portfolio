@@ -89,7 +89,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6" id="image-content">
-            <img src={Photo} className="img-fluid" alt="Image not found"></img>
+            <img src={Photo} className="img-fluid" alt="not found"></img>
           </div>
         </div>
       </div>

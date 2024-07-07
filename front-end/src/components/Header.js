@@ -19,6 +19,7 @@ const Header = () => {
     return () => {
       button.removeEventListener('click', handleClick);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isButtonCLicked]);
 
   const scrollToSection = (sectionId) => {

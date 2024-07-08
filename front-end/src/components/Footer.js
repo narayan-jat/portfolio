@@ -21,6 +21,12 @@ const Footer = () => {
         <Link to="" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} size="2x"></FontAwesomeIcon>
         </Link>
+        <Link to="" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faDiscord} size="2x"></FontAwesomeIcon>
+        </Link>
+        <Link to="" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faSlack} size="2x"></FontAwesomeIcon>
+        </Link>
       </div>
       <div className="tagline">Made with <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> by Narayan Jat</div>
     </div>

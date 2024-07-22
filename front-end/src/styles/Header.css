@@ -1,6 +1,8 @@
 .header-link {
     text-decoration: none;
     color: white;
+    font-weight: 700;
+    padding-right: 15px;
 }
 
 .header {
@@ -15,13 +17,14 @@
     top: 0;
     width: 100%;
     padding: 10px 0;
-    z-index: 1000;
+    z-index: 100;
+    
 }
 
 .brand-name {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
+    color: green;
+    font-family: sans-serif;
+    font-weight: 900;
 }
 
 .menu-icon {
@@ -67,17 +70,18 @@
 
     .link-container-active {
         display: flex;
-        width: 80%;
+        width: 100%;
         align-items: center;
         position: absolute;
-        top: 80px;
+        top: 60px;
         color: black;
         z-index: 100;
-        transform: transition 1s ease-in-out;
+        background-color: white;
     }
 
     .link-container{
         display: none;
+
     }
     .header-link {
         text-decoration: none;
@@ -90,11 +94,13 @@
         align-items: center;
         background-color: white;
         width: 100%;
-        padding: 10px;
+        padding: 10px 0;
+        border-radius: 5px;
     }
 
     .header-link{
         margin-top: 10px;
+        text-decoration: underline;
     }
 
     .button {
@@ -104,6 +110,14 @@
     .header{
         display: flex;
         justify-content: space-around;
+    }
+
+    .list-item {
+        margin: 10px 0;
+        font-family: sans-serif;
+        font-weight: 700;
+        padding: 5px 15px;
+        font-size: 1.1rem;
     }
 
     .menu-icon-active .bar:nth-child(1) {

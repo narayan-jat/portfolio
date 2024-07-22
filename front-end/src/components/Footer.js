@@ -1,34 +1,71 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faFacebook, faInstagram, faGithub, faMedium, faHackerrank, faLinkedin, faDiscord, faSlack} from '@fortawesome/free-brands-svg-icons';
+import { faHeart} from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faGithub,
+  faMedium,
+  faHackerrank,
+  faLinkedin,
+  faWhatsapp,
+  
+} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
+const socialHandles = [
+  {
+    name: "Github",
+    logo: faGithub,
+    url: "https://github.com/narayan-jat",
+  },
+  {
+    name: "Hackerrank",
+    logo: faHackerrank,
+    url: "https://www.hackerrank.com/profile/narayanjat2964",
+  },
+  {
+    name: "Medium",
+    logo: faMedium,
+    url: "https://medium.com/@nj223948",
+  },
+  {
+    name: "Linkedin",
+    logo: faLinkedin,
+    url: "https://www.linkedin.com/in/narayan-jat-23935a255/",
+  },
+  {
+    name: "Whatsapp",
+    logo: faWhatsapp,
+    url: "https://wa.me/",
+  },
+  {
+    name: "Instagram",
+    logo: faInstagram,
+    url: "https://www.instagram.com/narayanjat2964/",
+  },
+];
 const Footer = () => {
   return (
     <div id="footer">
       <div className="social-media">
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} size="2x"></FontAwesomeIcon>
-        </Link>
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faMedium} size="2x"></FontAwesomeIcon>
-        </Link>
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faHackerrank} size="2x"></FontAwesomeIcon>
-        </Link>
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} size="2x"></FontAwesomeIcon>
-        </Link>
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faDiscord} size="2x"></FontAwesomeIcon>
-        </Link>
-        <Link to="" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faSlack} size="2x"></FontAwesomeIcon>
-        </Link>
+        {socialHandles.map((handle, index) => (
+          <div className="d-flex flex-column align-items-center" key={index}>
+            <Link
+              to={handle.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="handle-link"
+            >
+              <FontAwesomeIcon icon={handle.logo} size="2x"></FontAwesomeIcon>
+            </Link>
+            <p>{handle.name}</p>
+          </div>
+        ))}
       </div>
-      <div className="tagline">Made with <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> by Narayan Jat</div>
+      <div className="tagline">
+        Made with <FontAwesomeIcon className="heart" icon={faHeart}></FontAwesomeIcon> by <span style={{fontWeight: 700, }}>Narayan Jat</span>
+      </div>
     </div>
   );
 };

@@ -127,7 +127,7 @@ const tools = [
 ]
 const Skills = () => {
   return (
-    <div id="skills" style={{ backgroundColor: "black", color: "white", width: "100%", padding: "100px 0"}}>
+    <div id="skills" style={{ backgroundColor: "hsla(240,8%,12%,1)", color: "white", width: "100%", padding: "100px 0"}}>
       <h2
         style={{
             display: "flex",

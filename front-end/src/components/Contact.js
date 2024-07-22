@@ -32,7 +32,7 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <div id="contact" style={{ padding: "150px 0" }}>
+    <div id="contact" style={{ backgroundColor: "rgb(231, 225, 225)",  padding: "150px 0" }}>
       <h2
         style={{ color: "green", textAlign: "center", paddingBottom: "50px" }}
       >

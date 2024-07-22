@@ -7,7 +7,6 @@ import {
   faMedium,
   faHackerrank,
   faLinkedin,
-  faWhatsapp,
   
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
@@ -33,11 +32,6 @@ const socialHandles = [
     name: "Linkedin",
     logo: faLinkedin,
     url: "https://www.linkedin.com/in/narayan-jat-23935a255/",
-  },
-  {
-    name: "Whatsapp",
-    logo: faWhatsapp,
-    url: "https://wa.me/",
   },
   {
     name: "Instagram",

@@ -55,7 +55,7 @@ const Achievemets = () => {
     <div
       id="achievements"
       style={{
-        backgroundColor: "black",
+        backgroundColor: "hsla(240,8%,12%,1)",
         padding: "100px 0",
         color: "white",
       }}

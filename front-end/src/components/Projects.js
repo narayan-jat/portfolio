@@ -92,7 +92,7 @@ function Projects() {
                   <img
                     className="project-image"
                     src={project.imageUrl}
-                    alt="First slide"
+                    alt="project image for Narayan jat portfolio website."
                   />
                 </Link>
                 <Carousel.Caption id="project-texts">

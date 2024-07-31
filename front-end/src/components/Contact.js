@@ -104,7 +104,7 @@ const handleSubmit = async (e) => {
           </Form>
         </div>
         <div id="contact-image">
-          <img className="contact-image" alt="not found" src={contactImage}></img>
+          <img className="contact-image" alt="contact Narayan Jat." src={contactImage}></img>
         </div>
       </div>
     </div>

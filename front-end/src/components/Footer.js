@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart} from "@fortawesome/free-solid-svg-icons";
 import {
-  faInstagram,
+  faCodepen,
   faGithub,
   faMedium,
   faHackerrank,
@@ -34,9 +34,9 @@ const socialHandles = [
     url: "https://www.linkedin.com/in/narayan-jat-23935a255/",
   },
   {
-    name: "Instagram",
-    logo: faInstagram,
-    url: "https://www.instagram.com/narayanjat2964/",
+    name: "Coding",
+    logo: faCodepen,
+    url: "https://leetcode.com/u/YGaufh2hy5/",
   },
 ];
 const Footer = () => {

@@ -11,14 +11,15 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    "name": "StackExchange Question and Answer Fetcher",
-    "details": "This Python script retrieves and processes questions and answers from Stack Exchange. It supports multiple platforms and allows for customizable queries based on tags or titles. Data is cleaned, formatted, and saved in both CSV and JSON formats for easy analysis and integration into various projects.",
-    "imageUrl": qa,
-    "sourceUrl": "https://github.com/narayan-jat/qa-extractor-stackexchange",
-    "liveUrl": "https://github.com/narayan-jat/qa-extractor-stackexchange",
-    "techStack": "Python",
-    "techField": "Data Collection and Analysis"
-  },  
+    name: "Codehut",
+    details:
+      "Building a comprehensive platform with dedicated dashboards for hosts and participants, enhancing user experience through tailored features.Implementing open registration for contests with automated submission evaluation, ranking, and prize distribution.",
+    imageUrl: projectImage,
+    sourceUrl: "https://github.com/narayan-jat/coding-contest-project",
+    liveUrl: "https://github.com/narayan-jat/coding-contest-project",
+    techStack: "React, Node, Django",
+    techField: "Web Development"
+  },
   {
     name: "Portfolio",
     details:

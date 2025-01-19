@@ -4,6 +4,7 @@ import strucutre from "../media/structure.png";
 import cleaning from "../media/cleaning.png";
 import tic from "../media/tic.png";
 import dropout from "../media/dropout.avif"
+import qa from "../media/qa_fetcher.png";
 
 import "../styles/Projects.css";
 import { Link } from "react-router-dom";
@@ -92,7 +93,7 @@ function Projects() {
                   <img
                     className="project-image"
                     src={project.imageUrl}
-                    alt="First slide"
+                    alt="project image for Narayan jat portfolio website."
                   />
                 </Link>
                 <Carousel.Caption id="project-texts">

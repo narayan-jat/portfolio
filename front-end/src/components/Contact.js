@@ -32,7 +32,7 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <div id="contact" style={{ padding: "150px 0" }}>
+    <div id="contact" style={{ backgroundColor: "rgb(231, 225, 225)",  padding: "150px 0" }}>
       <h2
         style={{ color: "green", textAlign: "center", paddingBottom: "50px" }}
       >
@@ -104,7 +104,7 @@ const handleSubmit = async (e) => {
           </Form>
         </div>
         <div id="contact-image">
-          <img className="contact-image" alt="not found" src={contactImage}></img>
+          <img className="contact-image" alt="contact Narayan Jat." src={contactImage}></img>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import PersonalData from "../apis/PersonalData";
 import "../styles/Home.css";
 import Photo from "../media/image.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,16 +18,11 @@ const goals = [
 const about = `Welcome to my portfolio! I am currently interning with Beans.ai in Noida. I am final year student at Sitare University. I'm a passionate and detail-oriented developer. I have a strong understanding of technologies and enjoy applying them to solve real-world challenges. I'm proficient in building scalable and efficient solutions for various applications, from data analysis to web development and machine learning models. `;
 
 const Home = () => {
-  const data = PersonalData();
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: "smooth" });
   };
-
-  // if (data === null) {
-  //   return <h1>Narayan is thinking</h1>;
-  // }
 
   return(
     <div id="home-container">
@@ -36,7 +30,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-6" id="text-content">
             <h2 className="greet">Hello, I'm </h2>
-            <h1 className="name">{data ? data.name : "Making it Beautiful"}</h1>
+            <h1 className="name">Narayan Jat</h1>
             <h3 className="greet">
               <Typewriter
                 options={{
@@ -89,7 +83,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6" id="image-content">
-            <img src={Photo} className="img-fluid" alt="not found"></img>
+            <img src={Photo} className="img-fluid" alt="Narayan's profile photo"></img>
           </div>
         </div>
       </div>

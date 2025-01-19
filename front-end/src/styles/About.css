@@ -18,6 +18,10 @@
 .period {
     color: #07b16a;
 }
+#about {
+    background-color: rgb(231, 225, 225);
+    padding-bottom: 50px;
+}
 
 #bio-container {
     margin: 50px 0;

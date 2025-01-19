@@ -55,7 +55,7 @@ const About = () => {
           {experience.map((exp, index) => (
             <div id="experience-inner"className="d-flex flex-row justify-content-start" key={index}>
               <div>
-                <img className="experience-svgs" src={exp.imageUrl}alt="not found"></img>
+                <img className="experience-svgs" src={exp.imageUrl}alt="Icon for Narayan's portfolio."></img>
               </div>
               <div>
                 <h4 id="experience-title">

@@ -127,7 +127,7 @@ const tools = [
 ]
 const Skills = () => {
   return (
-    <div id="skills" style={{ backgroundColor: "black", color: "white", width: "100%", padding: "100px 0"}}>
+    <div id="skills" style={{ backgroundColor: "hsla(240,8%,12%,1)", color: "white", width: "100%", padding: "100px 0"}}>
       <h2
         style={{
             display: "flex",
@@ -144,7 +144,7 @@ const Skills = () => {
         <div className="skills">
           {programmingSkills.map((skill, index) => (
             <div key={index} className="skill-image-box d-flex flex-column align-items-center">
-              <img className="skill-image" src={skill.image} alt="not found"></img>
+              <img className="skill-image" src={skill.image} alt="Skill icon for Narayan's portfolio."></img>
               <span>{skill.name}</span>
             </div>
           ))}
@@ -153,7 +153,7 @@ const Skills = () => {
         <div className="skills">
           {dataScience.map((skill, index) => (
             <div key={index} className=" skill-image-box d-flex flex-column align-items-center">
-              <img className="skill-image" src={skill.image} alt="not found"></img>
+              <img className="skill-image" src={skill.image} alt="Skill icon for Narayan's portfolio."></img>
               <span>{skill.name}</span>
             </div>
           ))}
@@ -162,7 +162,7 @@ const Skills = () => {
         <div className="skills">
           {webDevelopment.map((skill, index) => (
             <div key={index} className=" skill-image-box d-flex flex-column align-items-center">
-              <img className="skill-image" src={skill.image} alt="not found"></img>
+              <img className="skill-image" src={skill.image} alt="Skill icon for Narayan's portfolio."></img>
               <span>{skill.name}</span>
             </div>
           ))}
@@ -171,7 +171,7 @@ const Skills = () => {
         <div className="skills">
           {tools.map((skill, index) => (
             <div key={index} className=" skill-image-box d-flex flex-column align-items-center">
-              <img className="skill-image" src={skill.image} alt="not found"></img>
+              <img className="skill-image" src={skill.image} alt="Skill icon for Narayan's portfolio."></img>
               <span>{skill.name}</span>
             </div>
           ))}

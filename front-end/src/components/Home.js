@@ -16,7 +16,7 @@ const goals = [
   "Full Stack Developer",
 ];
   
-const about = `Welcome to my portfolio! I am currently interning with Mathisys advisors LLP in Gurgaon. I am third year(Junior) student at Sitare University. I'm a passionate and detail-oriented developer. I have a strong understanding of technologies and enjoy applying them to solve real-world challenges. I'm proficient in building scalable and efficient solutions for various applications, from data analysis to web development and machine learning models. `;
+const about = `Welcome to my portfolio! I am currently interning with Beans.ai in Noida. I am final year student at Sitare University. I'm a passionate and detail-oriented developer. I have a strong understanding of technologies and enjoy applying them to solve real-world challenges. I'm proficient in building scalable and efficient solutions for various applications, from data analysis to web development and machine learning models. `;
 
 const Home = () => {
   const data = PersonalData();

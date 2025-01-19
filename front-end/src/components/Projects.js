@@ -10,6 +10,16 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    name: "Codehut",
+    details:
+      "Building a comprehensive platform with dedicated dashboards for hosts and participants, enhancing user experience through tailored features.Implementing open registration for contests with automated submission evaluation, ranking, and prize distribution.",
+    imageUrl: projectImage,
+    sourceUrl: "https://github.com/narayan-jat/coding-contest-project",
+    liveUrl: "https://github.com/narayan-jat/coding-contest-project",
+    techStack: "React, Node, Django",
+    techField: "Web Development"
+  },
+  {
     name: "Portfolio",
     details:
       "This portfolio project showcases a collection of my work and achievements, demonstrating my skills and expertise in various domains. It includes detailed descriptions of individual projects, highlighting my proficiency in programming, data analysis, machine learning, and software development. Each project is accompanied by source code, visualizations.",

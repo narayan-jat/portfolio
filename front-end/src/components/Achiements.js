@@ -3,6 +3,12 @@ import "../styles/Achievements.css";
 
 const milestones = [
   {
+    title: "Internship at Beans.ai",
+    date:  "15 January, 2025",
+    details: "I am currently interning with Beans.ai in Noida. Intern as a front-end developer.",
+    achievement: "Helping to improve Beansroute UI for manager console"
+},
+  {
     title: "Internship at Mathisys",
     date:  "20 May 2024",
     details: "I interned with Mathisys advisors LLP for 3 months, joining their on-site team in Gurgaon. This was my second on-site internship. I worked in the team of web developer. I with my team designed and created website of Purplesigma which is subsidiary of Mathisys. I also learned back-end libraries like Spring-Boot. The work environment at Mathisys is very heart touching.",
@@ -62,13 +68,13 @@ const Achievemets = () => {
     >   
 
         <h2 style={{textAlign: "center", color: "green", paddingBottom: "50px"}}>Milestones</h2>
-        <svg className="svg" width="100" height="3000" xmlns="http://www.w3.org/2000/svg">
+        <svg className="svg" width="100" height="3500" xmlns="http://www.w3.org/2000/svg">
         <polygon className="triangle" points="40,150 50,170 60,150" />
           <line
             x1="50"
             y1="0"
             x2="50"
-            y2="2500"
+            y2="3200"
             stroke="green"
             strokeWidth="5"
           />
@@ -76,7 +82,7 @@ const Achievemets = () => {
             x1="50"
             y1="2500"
             x2="50"
-            y2="3000"
+            y2="3500"
             stroke="green"
             strokeWidth="5"
             className="line"
@@ -88,6 +94,7 @@ const Achievemets = () => {
             <polygon className="triangle" points="40,1790 50,1810 60,1790" fill="white" stroke="green" strokeWidth={2}/>
             <polygon className="triangle" points="40,2140 50, 2160 60,2140" fill="white" stroke="green" strokeWidth={2}/>
             <polygon className="triangle" points="40,2440 50, 2460 60,2440" fill="white" stroke="green" strokeWidth={2}/>
+            <polygon className="triangle" points="40,2740 50, 2760 60,2740" fill="white" stroke="green" strokeWidth={2}/>
         </svg>
         <div className="milestones">
             <ul style={{paddingLeft: "0"}}>

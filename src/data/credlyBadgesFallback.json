@@ -1,0 +1,52 @@
+[
+  {
+    "id": "42d95a50-cbca-4770-b4ba-db98c05431c7",
+    "title": "Interactive Front-End Development",
+    "level": "Advanced",
+    "issuedAt": "2026-03-30",
+    "issuer": "IBM SkillsBuild",
+    "description": "This credential earner has the advanced skills and ability to create MongoDB aggregation pipelines to perform complex data transformations, use aggregation pipeline stages, and integrate these pipelines into web applications using Mongoose in Node.js. The individual can structure queries, write clean, maintainable code using modern JavaScript techniques, apply advanced rendering techniques, and build a class component. The earner has practiced essential workplace skills.",
+    "imageUrl": "https://images.credly.com/images/ab5e8b60-5f2b-4d09-9a2f-a71fe318d004/AdvancedBadgeEmblem_Interactive-Front-EndInterfaceDevelopment.png",
+    "publicUrl": "https://www.credly.com/badges/42d95a50-cbca-4770-b4ba-db98c05431c7"
+  },
+  {
+    "id": "d9588a99-21ab-4dbc-9c45-0fe30b1224c7",
+    "title": "Responsive Web Page Development",
+    "level": "Advanced",
+    "issuedAt": "2026-03-28",
+    "issuer": "IBM SkillsBuild",
+    "description": "This credential earner has the advanced skills and ability to create responsive web pages using CSS flex box and grid layouts. The individual can program responsive images and typography using CSS media queries in Bootstrap and can write efficient and readable codes using ES6 and modern JavaScript features. The earner has practiced essential workplace skills.",
+    "imageUrl": "https://images.credly.com/images/f5909ca5-9e85-47c2-88e7-b068b84adb77/AdvancedBadgeEmblem_ResponsiveWebPageDevelopment.png",
+    "publicUrl": "https://www.credly.com/badges/d9588a99-21ab-4dbc-9c45-0fe30b1224c7"
+  },
+  {
+    "id": "0eb9cce2-3835-45b3-9935-c820818ea7d4",
+    "title": "Back-End Development",
+    "level": "Advanced",
+    "issuedAt": "2026-03-21",
+    "issuer": "IBM SkillsBuild",
+    "description": "This credential earner has the advanced skills and ability to set up an environment for web development and create web pages using basic HTML, CSS, and JavaScript. The individual can use Node.js for server-side programming and make HTTP calls to APIs and can apply the Model View Controller (MVC) framework for structured application development. The earner has practiced essential workplace skills.",
+    "imageUrl": "https://images.credly.com/images/141a4f09-49ed-4526-9c5b-5894b47f2e07/Back_20End_20Development.png",
+    "publicUrl": "https://www.credly.com/badges/0eb9cce2-3835-45b3-9935-c820818ea7d4"
+  },
+  {
+    "id": "8b2548bb-44c1-41ed-9397-147533e6c27f",
+    "title": "Front-End Web Development",
+    "level": "Advanced",
+    "issuedAt": "2026-03-16",
+    "issuer": "IBM SkillsBuild",
+    "description": "This credential earner has advanced web development skills and the ability to craft interactive web pages using HTML, CSS, and JavaScript. The earner can identify software engineering principles and can handle errors within JavaScript. The individual has practical Command Line Interface skills for development environments and has practiced essential workplace skills.",
+    "imageUrl": "https://images.credly.com/images/99ea023d-3d8f-4b17-b527-7a084c021bd3/Front_20end_20Web_20Development.png",
+    "publicUrl": "https://www.credly.com/badges/8b2548bb-44c1-41ed-9397-147533e6c27f"
+  },
+  {
+    "id": "1c7975c2-df2a-4cbc-9abd-a7381a9e130d",
+    "title": "Web Development Fundamentals",
+    "level": "Intermediate",
+    "issuedAt": "2026-03-11",
+    "issuer": "IBM SkillsBuild",
+    "description": "This credential earner demonstrates knowledge of web development concepts, processes to develop, deploy, and test websites, and the tools and programming languages that web developers use. The individual has a conceptual understanding of how to develop an interactive website using HTML, CSS, and JavaScript in a simulated integrated development environment (IDE). The earner is aware of the job outlook in web development and is familiar with the skills required for success in various roles.",
+    "imageUrl": "https://images.credly.com/images/0c1c6eed-818c-4f78-bfaa-7ea8704c863a/image.png",
+    "publicUrl": "https://www.credly.com/badges/1c7975c2-df2a-4cbc-9abd-a7381a9e130d"
+  }
+]

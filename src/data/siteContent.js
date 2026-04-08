@@ -52,6 +52,136 @@ export const EDUCATION = [
   },
 ];
 
+/**
+ * Shown on Projects — no GitHub API (avoids unauthenticated rate limits).
+ * Each entry: short multi-line blurb + techStack chips (aligned with repo READMEs).
+ */
+export const FEATURED_REPOS = [
+  {
+    id: "featured-deal-management-platform",
+    name: "Deal management platform",
+    descriptionLines: [
+      "Deal intelligence for private lenders: one workspace from first touch to close with structured deal data, documents, and collaboration.",
+      "Kanban-style pipeline (New through Completed and Rejected), drag-and-drop, and access scoped to creators and invited members via Supabase row-level security.",
+      "File uploads through Supabase Storage, activity logging, invites and shareable links, plus in-app messaging built on Matrix.",
+      "SQL migrations, RLS and storage policies, and Edge Functions support production-style backend operations alongside a typed React client.",
+    ],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Radix UI",
+      "Supabase",
+      "PostgreSQL",
+      "Matrix",
+      "Vercel",
+    ],
+    html_url: "https://github.com/narayan-jat/deal-management-platform",
+  },
+  {
+    id: "featured-coding-contest-platform",
+    name: "Coding contest platform",
+    descriptionLines: [
+      "Full-stack app for student clubs and communities to organize and join coding contests without relying on large third-party platforms.",
+      "Hosts get dashboards to create and edit contests, attach problems and prizes, and manage banners via Firebase Storage; participants browse and register through REST APIs.",
+      "Firebase handles authentication on the client while Django stores relational contest, registration, and profile data keyed by Firebase UID.",
+      "OpenAPI/Swagger documents the API; the schema anticipates submissions, judging, and rankings for a future execution pipeline.",
+    ],
+    techStack: [
+      "React",
+      "Vite",
+      "Django",
+      "DRF",
+      "Firebase",
+      "PostgreSQL",
+      "SQLite",
+      "Axios",
+      "Swagger",
+    ],
+    html_url: "https://github.com/narayan-jat/coding-contest-platform",
+  },
+  {
+    id: "featured-expense-manager",
+    name: "expense-manager",
+    descriptionLines: [
+      "Finlogger is a personal expense tracker: pick a month, see spending against a configured income, and manage line items with clear feedback.",
+      "Category breakdown shows each category’s share of that month’s spending; tables support add, edit, and delete with toast notifications on success or failure.",
+      "The React SPA talks to a dedicated Express API; persistence lives in MongoDB via Mongoose models rather than static JSON.",
+      "A simple user stub ties requests to a user id today, leaving room to swap in real authentication later.",
+    ],
+    techStack: [
+      "React",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "React Bootstrap",
+      "Bootstrap",
+      "REST",
+    ],
+    html_url: "https://github.com/narayan-jat/expense-manager",
+  },
+  {
+    id: "featured-portfolio",
+    name: "portfolio",
+    descriptionLines: [
+      "Personal portfolio site that presents my profile, experience, education, skills, certifications, and featured projects in one place.",
+      "Layout uses responsive sections with a hero, about copy, timeline-style experience, and project cards that link out to GitHub.",
+      "Built as a single-page React app with client-side routing so navigation stays fast without a separate page reload.",
+      "Content is centralized in data modules so copy and project listings are easy to update without touching layout code.",
+    ],
+    techStack: [
+      "React",
+      "React Router",
+      "Bootstrap",
+      "React Bootstrap",
+      "Font Awesome",
+      "Create React App",
+    ],
+    html_url: "https://github.com/narayan-jat/portfolio",
+  },
+  {
+    id: "featured-book-management",
+    name: "book-management",
+    descriptionLines: [
+      "Book exchange platform for students and readers to list, search, and swap books with messaging to arrange handoffs.",
+      "Users manage profiles, listed books, and exchange history; books carry title, author, genre, condition, and availability status.",
+      "A Node backend exposes RESTful CRUD for books, profiles, and messages; MongoDB holds the document-shaped data.",
+      "Bootstrap provides consistent styling across listing and messaging views, with a path sketched for reviews and notifications later.",
+    ],
+    techStack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Bootstrap",
+      "REST",
+    ],
+    html_url: "https://github.com/narayan-jat/book-management",
+  },
+  {
+    id: "featured-slide-generator-api",
+    name: "slide-generator-api",
+    descriptionLines: [
+      "API-first service that creates presentations from a topic and slide count, persists decks in PostgreSQL, and returns downloadable PowerPoint files.",
+      "Users register and log in for JWT-protected routes; presentations, slides, and API usage are modeled with SQLAlchemy and migrated with Alembic.",
+      "Google Gemini helps generate slide content configured in environment variables alongside the database URL.",
+      "python-pptx assembles .pptx downloads so clients can integrate generation without running desktop Office.",
+    ],
+    techStack: [
+      "FastAPI",
+      "Uvicorn",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Pydantic",
+      "Gemini API",
+      "python-pptx",
+      "JWT",
+    ],
+    html_url: "https://github.com/narayan-jat/slide-generator-api",
+  },
+];
+
 export const EXPERIENCE = [
   {
     org: "Beans.ai",

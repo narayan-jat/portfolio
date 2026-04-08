@@ -25,7 +25,7 @@ const HeroSection = () => {
       <Container className="pt-lg-3">
         <Row className="align-items-center g-5">
           <Col lg={7}>
-            <Badge bg="dark" className="mb-2 border border-secondary px-3 py-2">
+            <Badge bg="dark" className="mb-2 mt-4 border border-secondary px-3 py-2">
               {PROFILE.headline}
             </Badge>
             <p className="text-secondary small mb-3 mb-md-2">{PROFILE.subhead}</p>

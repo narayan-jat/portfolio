@@ -9,9 +9,6 @@ const ExperienceSection = () => {
         <h2 className="pf-section-title">
           Experience <span className="pf-accent">/</span> internships
         </h2>
-        <p className="pf-section-lead">
-          Newest first — aligns with what hiring managers scan for first.
-        </p>
         <div className="pf-glass p-4 p-md-5">
           <div className="pf-timeline">
             {EXPERIENCE.map((job, i) => (

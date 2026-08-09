@@ -30,7 +30,7 @@ List of technologies, languages, and frameworks I'm proficient in. This can incl
 - **Other:** Git, RESTful APIs, etc.
 
 ## Resume
-My resume is live and accessible at [codewithnarayan.com](https://codewithnarayan.netlify.app). It includes detailed information about my education, work experience, and skills.
+My resume is live and accessible at [codewithnarayan.netlify.app](https://codewithnarayan.netlify.app). It includes detailed information about my education, work experience, and skills.
 
 ## Achievements
 Highlights of achievements and milestones during my journey in software development and beyond.

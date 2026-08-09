@@ -35,4 +35,7 @@ My resume is live and accessible at [codewithnarayan.com](https://codewithnaraya
 ## Achievements
 Highlights of achievements and milestones during my journey in software development and beyond.
 
+
+changed the readme to make it safe.
+
 ---

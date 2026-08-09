@@ -49,12 +49,6 @@ export function useCredlyBadges(credlyUsername) {
         } else if (!cancelled) {
           setBadges(credlyBadgesFallback);
         }
-      } catch {
-        if (!cancelled) {
-          setBadges(credlyBadgesFallback);
-        }
-      } finally {
-        if (!cancelled) setLoading(false);
       }
     };
 

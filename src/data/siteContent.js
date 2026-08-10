@@ -15,18 +15,9 @@ export const PROFILE = {
   name: "Narayan Jat",
   credlyUsername: "narayan-jat",
   headline: "Full Stack Developer · SaaS, MVPs & production systems",
-  subhead:
-    "B.Tech Computer Science @ Sitare University (8.71/10, Dean’s List) · graduating May 2026",
   location: "Indore, Madhya Pradesh, India",
   githubUsername: "narayan-jat",
-  /** Hero typewriter lines */
-  roles: [
-    "Full Stack Developer (2+ years)",
-    "SaaS & MVP builder",
-    "React · Express · PostgreSQL",
-    "Product-minded engineer",
-  ],
-  /** One tight line under the typewriter */
+  /** One tight line under the hero name */
   tagline:
     "I take ideas to production: clean architecture, fast delivery, and documentation your team can maintain. Often brought in for MVP launches, rebuilds, and “this is breaking in production” moments.",
   /** Three columns in About — resume + your positioning */
@@ -37,10 +28,35 @@ export const PROFILE = {
   ],
 };
 
+/** Right-column card in the hero, mirroring the reference site's Quick Facts pattern. */
+export const QUICK_FACTS = {
+  techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "GCP"],
+  focusAreas: "Production SaaS, MVP builds, AI integrated into real workflows",
+};
+
+/** Condensed teaser tiles under the hero CTAs — full versions live in GUIDING_PRINCIPLES below. */
+export const HERO_PRINCIPLES = [
+  {
+    title: "Production-first",
+    body: "Measured by users and uptime, not demo completeness.",
+    tint: "purple",
+  },
+  {
+    title: "Trade-offs upfront",
+    body: "Decisions on the table before code, so nobody pays for a rewrite.",
+    tint: "green",
+  },
+  {
+    title: "Root cause, not patches",
+    body: "Most of my work is the \"it's breaking\" call, not a fresh build.",
+    tint: "gray",
+  },
+];
+
 export const EDUCATION = [
   {
     school: "Sitare University",
-    detail: "B.Tech Computer Science — 8.71/10 (Dean’s List)",
+    detail: "B.Tech Computer Science — 8.76/10 (Dean’s List)",
     period: "Sep 2022 – May 2026",
     location: "Indore, Madhya Pradesh, India",
   },
@@ -60,11 +76,9 @@ export const FEATURED_REPOS = [
   {
     id: "featured-deal-management-platform",
     name: "Deal management platform",
+    featured: true,
     descriptionLines: [
-      "Deal intelligence for private lenders: one workspace from first touch to close with structured deal data, documents, and collaboration.",
-      "Kanban-style pipeline (New through Completed and Rejected), drag-and-drop, and access scoped to creators and invited members via Supabase row-level security.",
-      "File uploads through Supabase Storage, activity logging, invites and shareable links, plus in-app messaging built on Matrix.",
-      "SQL migrations, RLS and storage policies, and Edge Functions support production-style backend operations alongside a typed React client.",
+      "Deal intelligence for private lenders: a Kanban-style pipeline with Supabase row-level security, Matrix-based in-app messaging, and audited file handling.",
     ],
     techStack: [
       "React",
@@ -82,11 +96,9 @@ export const FEATURED_REPOS = [
   {
     id: "featured-coding-contest-platform",
     name: "Coding contest platform",
+    featured: true,
     descriptionLines: [
-      "Full-stack app for student clubs and communities to organize and join coding contests without relying on large third-party platforms.",
-      "Hosts get dashboards to create and edit contests, attach problems and prizes, and manage banners via Firebase Storage; participants browse and register through REST APIs.",
-      "Firebase handles authentication on the client while Django stores relational contest, registration, and profile data keyed by Firebase UID.",
-      "OpenAPI/Swagger documents the API; the schema anticipates submissions, judging, and rankings for a future execution pipeline.",
+      "Full-stack contest platform for student clubs: host dashboards, Firebase auth, and a Django/DRF API documented with OpenAPI/Swagger.",
     ],
     techStack: [
       "React",
@@ -161,11 +173,9 @@ export const FEATURED_REPOS = [
   {
     id: "featured-slide-generator-api",
     name: "slide-generator-api",
+    featured: true,
     descriptionLines: [
-      "API-first service that creates presentations from a topic and slide count, persists decks in PostgreSQL, and returns downloadable PowerPoint files.",
-      "Users register and log in for JWT-protected routes; presentations, slides, and API usage are modeled with SQLAlchemy and migrated with Alembic.",
-      "Google Gemini helps generate slide content configured in environment variables alongside the database URL.",
-      "python-pptx assembles .pptx downloads so clients can integrate generation without running desktop Office.",
+      "API-first service that generates PowerPoint decks from a topic using Gemini, with JWT auth and SQLAlchemy/Alembic-modeled persistence.",
     ],
     techStack: [
       "FastAPI",
@@ -180,6 +190,102 @@ export const FEATURED_REPOS = [
     ],
     html_url: "https://github.com/narayan-jat/slide-generator-api",
   },
+];
+
+/**
+ * Production SaaS products engineered and shipped end-to-end for a private
+ * client. No repo links (private codebases) — the live product is the proof.
+ */
+export const SHIPPED_PRODUCTS = [
+  {
+    id: "shipped-indexpine",
+    name: "IndexPine",
+    tag: "AI · SEO",
+    problem:
+      "Businesses struggled to scale organic traffic without expensive content teams.",
+    description:
+      "Autonomous AI publishing platform: keyword discovery, content optimization, and automated publishing across WordPress, Webflow, and Notion.",
+    techStack: [
+      "Next.js",
+      "Firebase",
+      "Google Search Console API",
+      "Multi-LLM orchestration",
+    ],
+    metric: "90% cut in manual content-ops cost",
+    liveUrl: "https://indexpine.ferrowright.com",
+  },
+  {
+    id: "shipped-title5flow",
+    name: "Title5Flow",
+    tag: "Field ops",
+    problem:
+      "Field inspectors lost hours to paper forms and app crashes at offline sites.",
+    description:
+      "Offline-first inspection platform with autosave, voice dictation, GPS-tagged photos, and automated PDF report generation.",
+    techStack: ["Kotlin", "Jetpack Compose", "Room DB", "Python"],
+    metric: "Report time: 2.5 hrs → 15 min",
+    liveUrl: "https://title5flow.ferrowright.com",
+  },
+  {
+    id: "shipped-shiftguard",
+    name: "ShiftGuard",
+    tag: "Safety monitoring",
+    problem:
+      "Outdoor crews faced heat and air-quality risk with no real-time monitoring.",
+    description:
+      "Cloud-scheduled safety platform polling EPA/weather APIs, pushing crew alerts, and generating compliance ledgers automatically.",
+    techStack: ["Next.js", "Firebase App Hosting", "Cloud Functions", "Resend"],
+    metric: "24/7 monitoring, zero-lag alerts",
+    liveUrl: "https://shiftguard.ferrowright.com",
+  },
+  {
+    id: "shipped-roleplayer",
+    name: "RolePlayer",
+    tag: "Voice AI",
+    problem:
+      "People lacked a realistic, low-stakes way to practice hard conversations.",
+    description:
+      "Interactive voice AI platform for conversation practice, with persona scaling and performance analytics.",
+    techStack: ["Next.js", "Multi-LLM orchestration", "Cartesia neural TTS"],
+    metric: "Sub-second voice latency",
+    liveUrl: "https://roleplayer.vidsifier.com",
+  },
+  {
+    id: "shipped-seatsprint",
+    name: "Seat Sprint Counselling",
+    tag: "EdTech · Payments",
+    problem:
+      "Admission counselling ran on unsecured Google Forms and manual UPI screenshots.",
+    description:
+      "Booking platform integrating Razorpay for verified seat payments, with automated counselor notifications.",
+    techStack: ["Next.js", "Firebase Hosting", "Cloud Functions", "Razorpay"],
+    metric: "100+ paid signups processed",
+    liveUrl: "https://seatsprint.ferrowright.com",
+  },
+];
+
+export const WHAT_I_DO = [
+  {
+    title: "Build",
+    body: "Full builds from spec to production — GoDex's multi-tenant Kanban deal platform, five live SaaS products shipped for a private client, a coding-contest platform for student communities.",
+  },
+  {
+    title: "Fix & scale what's already live",
+    body: "Most of my work has been the \"this is breaking in production\" call, not a greenfield start — Beans.ai frontend perf work (~40% faster load), Chalo's image pipeline (~85% faster), Title5Flow's report generation (2.5 hrs to 15 min).",
+  },
+  {
+    title: "Integrate AI where it removes real work",
+    body: "Measured outcomes, not AI for its own sake — Beans.ai's in-chat AI responder cut support load by ~75%, IndexPine runs an autonomous publishing pipeline, RolePlayer handles sub-second voice AI.",
+  },
+];
+
+export const GUIDING_PRINCIPLES = [
+  "Ship production, not demos — measured by users and uptime, not feature-complete in a sandbox.",
+  "Put the trade-offs on the table before writing code, so nobody pays for a rushed decision with a rewrite later.",
+  "Fix the root cause. Most of my work has been the production fire, not the greenfield build.",
+  "Document like someone else has to maintain it next month — because they usually do.",
+  "Reach for AI when it removes real work with a measurable result, not by default.",
+  "Moving fast doesn't mean skipping access control, audit trails, or the boring security work.",
 ];
 
 export const EXPERIENCE = [
@@ -222,59 +328,6 @@ export const EXPERIENCE = [
     period: "May 2023 – Aug 2023",
     points: [
       "Optimized image preprocessing with Python multiprocessing, reducing execution time by about 85%.",
-    ],
-  },
-];
-
-export const SKILL_GROUPS = [
-  {
-    label: "Languages",
-    items: ["Python", "JavaScript", "Java", "TypeScript"],
-  },
-  {
-    label: "Backend & APIs",
-    items: ["Node.js", "Express.js", "RESTful APIs", "Django"],
-  },
-  {
-    label: "Frontend",
-    items: [
-      "React.js",
-      "HTML",
-      "CSS",
-      "Vite",
-      "Webpack",
-      "Tailwind CSS",
-      "Bootstrap",
-      "MUI",
-      "ShadCN",
-    ],
-  },
-  {
-    label: "Data & storage",
-    items: [
-      "PostgreSQL",
-      "MySQL",
-      "SQLite",
-      "MongoDB",
-      "Supabase",
-      "Firebase Storage",
-      "Redis",
-      "Sequelize",
-      "Mongoose",
-    ],
-  },
-  {
-    label: "Tools & platforms",
-    items: [
-      "Git",
-      "GitHub",
-      "GCP",
-      "AWS",
-      "Vercel",
-      "Linux",
-      "shell scripting",
-      "Prisma",
-      "Drizzle",
     ],
   },
 ];

@@ -2,11 +2,12 @@ import React from "react";
 import NavbarMain from "../components/NavbarMain";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import WhatIDoSection from "../components/WhatIDoSection";
 import ExperienceSection from "../components/ExperienceSection";
+import ShippedProductsSection from "../components/ShippedProductsSection";
 import ProjectsSection from "../components/ProjectsSection";
-import SkillsSection from "../components/SkillsSection";
+import GuidingPrinciplesSection from "../components/GuidingPrinciplesSection";
 import CertificationsSection from "../components/CertificationsSection";
-import HighlightsSection from "../components/HighlightsSection";
 import SiteFooter from "../components/SiteFooter";
 
 const Portfolio = () => {
@@ -16,11 +17,12 @@ const Portfolio = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <WhatIDoSection />
         <ExperienceSection />
+        <ShippedProductsSection />
         <ProjectsSection />
-        <SkillsSection />
+        <GuidingPrinciplesSection />
         <CertificationsSection />
-        <HighlightsSection />
       </main>
       <SiteFooter />
     </div>

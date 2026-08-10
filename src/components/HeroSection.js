@@ -5,111 +5,146 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import Typewriter from "typewriter-effect";
-import { LINKS, PROFILE } from "../data/siteContent";
-import photo from "../media/image.jpg";
+  faLocationDot,
+  faCode,
+  faBullseye,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  LINKS,
+  PROFILE,
+  EXPERIENCE,
+  EDUCATION,
+  QUICK_FACTS,
+  HERO_PRINCIPLES,
+} from "../data/siteContent";
 
-const scrollTo = (id) => {
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth" });
-};
+const currentJob = EXPERIENCE[0];
+const education = EDUCATION[0];
+const gradYear = education.period.split("–")[1]?.trim() || education.period;
+const cgpa = education.detail.match(/[\d.]+\/10/)?.[0];
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="pf-section pt-4 mt-4">
-      <Container className="pt-lg-3">
-        <Row className="align-items-center g-5">
+    <section id="hero" className="pf-section pf-hero-section">
+      <Container>
+        <Row className="g-5 align-items-start">
           <Col lg={7}>
-            <Badge bg="dark" className="mb-2 mt-4 border border-secondary px-3 py-2">
-              {PROFILE.headline}
-            </Badge>
-            <p className="text-secondary small mb-3 mb-md-2">{PROFILE.subhead}</p>
-            <h1 className="pf-hero-name mb-2">{PROFILE.name}</h1>
-            <div className="pf-type-line mb-3">
-              <Typewriter
-                options={{
-                  strings: PROFILE.roles,
-                  autoStart: true,
-                  loop: true,
-                  delay: 45,
-                  deleteSpeed: 28,
-                  pauseFor: 1400,
-                }}
-              />
+            <div className="d-flex align-items-center gap-2 mb-4 flex-wrap">
+              <span className="pf-eyebrow-pill">Full-stack</span>
+              <h1 className="text-muted small mb-0 fw-normal">
+                {PROFILE.name} · SaaS &amp; MVP builder · Production systems
+              </h1>
             </div>
-            <p className="lead text-secondary mb-4">{PROFILE.tagline}</p>
-            <div className="d-flex flex-wrap gap-2 mb-4">
-              <span className="pf-stat-pill">
-                <FontAwesomeIcon icon={faLocationDot} />
-                {PROFILE.location}
-              </span>
-            </div>
-            <div className="d-flex flex-wrap gap-2 mb-4">
-              <Button
-                href={LINKS.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                as="a"
-                variant="success"
-                className="fw-semibold px-4"
-              >
-                <FontAwesomeIcon icon={faGithub} className="me-2" />
-                GitHub
-              </Button>
-              <Button
-                href={LINKS.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                as="a"
-                variant="outline-light"
-                className="fw-semibold px-4"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="me-2" />
-                LinkedIn
-              </Button>
-              <Button
-                href={LINKS.credly}
-                target="_blank"
-                rel="noopener noreferrer"
-                as="a"
-                variant="outline-light"
-                className="fw-semibold px-4 border pf-cert-hero-btn"
-              >
-                Certifications
-              </Button>
+
+            <h2 className="pf-hero-headline mb-4">
+              Structure over <span className="pf-accent">shortcuts</span>.
+              Shipped over <span className="pf-accent">theoretical</span>.
+            </h2>
+
+            <p className="lead text-muted mb-4" style={{ maxWidth: "38rem" }}>
+              {PROFILE.tagline}
+            </p>
+
+            <div className="d-flex flex-wrap gap-3 mb-4">
               <Button
                 href={LINKS.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 as="a"
-                variant="outline-success"
-                className="pf-btn-resume fw-semibold px-4"
+                className="pf-btn-primary fw-semibold px-4"
               >
-                View resume
+                View Resume
+              </Button>
+              <Button
+                href={LINKS.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                as="a"
+                className="pf-btn-outline fw-semibold px-4"
+              >
+                <FontAwesomeIcon icon={faGithub} className="me-2" />
+                View My Code
               </Button>
             </div>
-            <button
-              type="button"
-              className="btn btn-link text-secondary text-decoration-none p-0 d-flex align-items-center gap-2"
-              onClick={() => scrollTo("about")}
-            >
-              <FontAwesomeIcon icon={faArrowDown} className="pf-accent" />
-              About me
-            </button>
+
+            <Row className="g-3">
+              {HERO_PRINCIPLES.map((p) => (
+                <Col sm={4} key={p.title}>
+                  <div
+                    className={`pf-hero-principle-tile pf-tint-${p.tint}`}
+                  >
+                    <h3 className="h6 fw-bold mb-1">{p.title}</h3>
+                    <p className="text-muted small mb-0 lh-sm">{p.body}</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </Col>
+
           <Col lg={5}>
-            <div className="pf-glass p-3 p-sm-4">
-              <div className="pf-avatar-wrap">
-                <img
-                  src={photo}
-                  alt={`${PROFILE.name} — profile`}
-                  className="pf-avatar"
+            <div className="pf-quickfacts-card">
+              <h3 className="h6 fw-bold mb-1">Quick Facts</h3>
+
+              <div className="pf-quickfact-row">
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="pf-quickfact-icon"
                 />
+                <div>
+                  <p className="pf-quickfact-label mb-0">Currently</p>
+                  <p className="text-muted small mb-0">
+                    {currentJob.role} at {currentJob.org}
+                  </p>
+                </div>
+              </div>
+
+              <div className="pf-quickfact-row">
+                <FontAwesomeIcon icon={faCode} className="pf-quickfact-icon" />
+                <div className="flex-grow-1">
+                  <p className="pf-quickfact-label mb-2">Tech Stack</p>
+                  <div className="d-flex flex-wrap gap-1">
+                    {QUICK_FACTS.techStack.map((t) => (
+                      <Badge
+                        key={t}
+                        bg="light"
+                        text="dark"
+                        className="fw-normal border"
+                      >
+                        {t}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="pf-quickfact-row">
+                <FontAwesomeIcon
+                  icon={faBullseye}
+                  className="pf-quickfact-icon"
+                />
+                <div>
+                  <p className="pf-quickfact-label mb-0">Focus Areas</p>
+                  <p className="text-muted small mb-0">
+                    {QUICK_FACTS.focusAreas}
+                  </p>
+                </div>
+              </div>
+
+              <div className="pf-quickfact-row">
+                <FontAwesomeIcon
+                  icon={faGraduationCap}
+                  className="pf-quickfact-icon"
+                />
+                <div>
+                  <p className="pf-quickfact-label mb-0">Education</p>
+                  <p className="text-muted small mb-0">
+                    {education.school} · B.Tech CS
+                    {cgpa ? ` · ${cgpa} CGPA` : ""} · {gradYear}
+                  </p>
+                </div>
               </div>
             </div>
           </Col>

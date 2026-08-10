@@ -14,46 +14,47 @@ const CertificationsSection = () => {
   return (
     <section id="certifications" className="pf-section">
       <Container>
-        <h2 className="pf-section-title mb-3">Certifications</h2>
+        <span className="pf-section-eyebrow">Credentials</span>
+        <h2 className="pf-section-title mb-4">Certifications</h2>
 
         {loading ? (
           <div className="text-center py-4">
-            <Spinner animation="border" size="sm" variant="success" />
+            <Spinner animation="border" size="sm" className="pf-accent" />
           </div>
         ) : null}
 
-        <Row className="g-4">
+        <Row className="g-3">
           {badges.map((c) => (
             <Col md={6} lg={4} key={c.id}>
               <a
                 href={c.publicUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-decoration-none text-light d-block h-100"
+                className="text-decoration-none text-reset d-block"
               >
-                <div className="pf-cert-card pf-glass p-4 h-100 d-flex flex-column">
-                  <div className="text-center mb-3">
-                    {c.imageUrl ? (
-                      <img
-                        src={c.imageUrl}
-                        alt=""
-                        className="pf-cert-badge-img"
+                <div className="pf-cert-strip-card">
+                  {c.imageUrl ? (
+                    <img
+                      src={c.imageUrl}
+                      alt=""
+                      className="pf-cert-strip-img"
+                    />
+                  ) : (
+                    <div className="pf-cert-icon-wrap">
+                      <FontAwesomeIcon
+                        icon={faAward}
+                        className="pf-accent"
                       />
-                    ) : (
-                      <div className="pf-cert-icon-wrap mx-auto">
-                        <FontAwesomeIcon
-                          icon={faAward}
-                          size="xl"
-                          className="pf-accent"
-                        />
-                      </div>
-                    )}
+                    </div>
+                  )}
+                  <div className="flex-grow-1 text-truncate">
+                    <p className="text-muted small mb-0 text-truncate">
+                      {c.issuer}
+                    </p>
+                    <h3 className="h6 fw-semibold mb-0 text-truncate">
+                      {c.title}
+                    </h3>
                   </div>
-                  <p className="text-secondary small mb-1">{c.issuer}</p>
-                  <h3 className="h6 fw-bold text-light mb-2">{c.title}</h3>
-                  <p className="text-secondary small pf-cert-desc mb-0 flex-grow-1">
-                    {c.description}
-                  </p>
                 </div>
               </a>
             </Col>

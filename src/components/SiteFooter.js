@@ -38,7 +38,7 @@ const SiteFooter = () => {
             </a>
           ))}
         </div>
-        <p className="text-secondary small mb-0">
+        <p className="text-muted small mb-0">
           Built with React & Bootstrap · {PROFILE.name} · Software Development
         </p>
       </Container>

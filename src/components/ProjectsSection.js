@@ -6,30 +6,31 @@ import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
-import { FEATURED_REPOS } from "../data/siteContent";
+import {
+  faCodeBranch,
+  faArrowUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FEATURED_REPOS, LINKS } from "../data/siteContent";
 
 const ProjectsSection = () => {
-  const repos = FEATURED_REPOS;
+  const repos = FEATURED_REPOS.filter((r) => r.featured);
 
   return (
     <section id="projects" className="pf-section">
       <Container>
-        <h2 className="pf-section-title mb-3">Projects</h2>
+        <span className="pf-section-eyebrow">Open source &amp; personal</span>
+        <h2 className="pf-section-title mb-4">Projects</h2>
 
         <Row className="g-4">
           {repos.map((r) => (
             <Col md={6} xl={4} key={r.id}>
-              <Card
-                bg="dark"
-                text="light"
-                className="pf-project-card border-secondary h-100"
-              >
+              <Card className="pf-project-card pf-card h-100 border-0">
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-semibold text-truncate">
                     {r.name}
                   </Card.Title>
-                  <div className="text-secondary small flex-grow-1">
+                  <div className="text-muted small flex-grow-1">
                     {r.descriptionLines?.length ? (
                       r.descriptionLines.map((line, i) => (
                         <p key={i} className="mb-2 lh-sm">
@@ -50,8 +51,9 @@ const ProjectsSection = () => {
                       {r.techStack.map((tech, i) => (
                         <Badge
                           key={`${r.id}-${tech}-${i}`}
-                          bg="secondary"
-                          className="fw-normal"
+                          bg="light"
+                          text="dark"
+                          className="fw-normal border"
                         >
                           {tech}
                         </Badge>
@@ -63,7 +65,6 @@ const ProjectsSection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     as="a"
-                    variant="outline-success"
                     size="sm"
                     className="pf-btn-resume mt-auto align-self-start"
                   >
@@ -75,6 +76,23 @@ const ProjectsSection = () => {
             </Col>
           ))}
         </Row>
+
+        <div className="text-center mt-5">
+          <Button
+            href={LINKS.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            as="a"
+            className="pf-btn-outline fw-semibold px-4"
+          >
+            <FontAwesomeIcon icon={faGithub} className="me-2" />
+            View more on GitHub
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className="ms-2"
+            />
+          </Button>
+        </div>
       </Container>
     </section>
   );

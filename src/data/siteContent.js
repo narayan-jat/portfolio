@@ -111,7 +111,7 @@ export const FEATURED_REPOS = [
       "Axios",
       "Swagger",
     ],
-    html_url: "https://github.com/narayan-jat/coding-contest-platform",
+    html_url: "https://github.com/narayan-jat/coding-contest-project",
   },
   {
     id: "featured-expense-manager",
